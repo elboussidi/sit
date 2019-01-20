@@ -1,0 +1,65 @@
+.logout a {
+background-color: #28a745 ;
+}
+.usr{
+
+}
+.yes{
+    color: limegreen ;
+}
+.no{
+    color: red ;
+}
+
+a{
+    color: black ;
+}
+.man {
+    
+    height: 16cm ;
+    width: 15cm;
+    background-color: white;
+    padding: 20px;
+     border: 2px black solid ;
+}
+
+.a {
+    float: right ;
+    width: 20%;
+    font-size: 12px;
+}
+
+.dat {
+    float:left ;
+    width: 20% ;
+}
+
+.name {
+    float: right;
+    text-align: right ;
+    margin-right: 50px;
+    width: auto;
+}
+
+
+
+
+table {
+    width: 75%;
+   border-collapse: collapse ;
+    padding: 5px;
+     text-align: center;
+}
+
+table tr td{
+    border: 1px solid #500a0a ;
+    padding: 7px; text-align: center;
+    padding: 7px;
+}table tr th{
+    border: 1px solid #500a0a ;
+    padding: 7px; text-align: center;
+    padding: 7px;
+}
+form{
+    margin: 20px;
+}
