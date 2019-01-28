@@ -21,12 +21,12 @@ while ($row = $result->fetch_assoc()) {
      $_SESSION['lev']=$row['lev'];
     
     header("location: index.php" );
-}
- }
-          
-      }
+}   
 
-?>
+ }
+ 
+      }
+ 
 <html>
     <head>
         <meta charset="UTF-8">

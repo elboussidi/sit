@@ -9,33 +9,34 @@
 <html>
     <head>
         <meta charset='UTF-8'>
-          <link   type="text/css" rel="stylesheet" href="bootstrap.min.css"> 
+          <link   type="text/css" rel="stylesheet" href="bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="style.css" >
         <title></title>
-      
-      
-         
+
+
+
     </head>
     <body dir='rtl'>
-        <center>
-       
 
-   
+        <center>
+
+
+
 <?php
  if(isset($_GET['id'])){
-         $iid=$_GET['id'] ; 
+         $iid=$_GET['id'] ;
      }
-   
+
 
 //   '%".$id."%'"
     $red="select * from usr where id =  '$iid'" ;
     $result= mysqli_query($connect, $red) ;
-  
 
-   
+
+
     while ($row= mysqli_fetch_assoc($result)){
-        
-        
+
+
        $dat=$row['dat add'];
        $geographe=$row['geographe'];
        $arab=$row['arab'];
@@ -43,26 +44,26 @@
         $age=$row['anglais'];
         $ffname=$row['ffname'];
         $sum= ($age+$geographe+$arab)/3 ;
-        echo " 
+        echo "
             <br><br> <hr> <br><br>
          <div class='a'>  المملكة المغربية <br> وزارة التربية و التعليم <br>اكاديمية مراكش-اسفي </div>
    <img alt='logo' src='2000px-Coat_of_arms_of_Morocco.svg.png' style='width: 100px ; height: 100px'>
    <table>
          <div class='dat'> بتاريخ :<br>$dat</div><br>
           <h3> بيان نقط المراقبة المستمرة </h3>
-          
 
 
-          <div class='name'> اسم الطالب : $ffname   <br><br>   الرقم الوطني :$id </div><br><br> <br><br> 
-          <hr style='width: 50%;' ><br><br> 
+
+          <div class='name'> اسم الطالب : $ffname   <br><br>   الرقم الوطني :$id </div><br><br> <br><br>
+          <hr style='width: 50%;' ><br><br>
 
 
  <table>
   <tr>
           <th>المادة </th>
        <th>النقطة </th>
-       
-  </tr> 
+
+  </tr>
   <tr>
                    <th>العربية</th>
         <th>$arab </th>
@@ -71,47 +72,42 @@
   <tr>
    <th>الجغرافيا</th>
         <th>$geographe</th>
-       
- </tr>  
+
+ </tr>
      <tr>
      <th>انجليزية</th>
         <th>$age</th>
-        
- </tr>  
-     
-     
+
+ </tr>
+
+
 <tr>
                 <th>المعدل</th>
         <th>$sum</th>
-        
+
  </tr>
- </table>      
-    
-  <br><br> <br><br> <br><br><hr> 
+ </table>
+
+  <br><br> <br><br> <br><br><hr>
        " ;
-        
 
-      
 
-   
-  } 
+
+
+
+  }
 
     ?>
-  
-           </center>  
+<input type="button" class="btn btn-secondary"value="طبع النتيجة" onclick="window.print ( ) ;" />
+           </center>
             </div>
-            
+
         </div>
 	</div>
 
 
- 
-        
-        
+
+
+
     </body>
 </html>
-
-
-
-
-

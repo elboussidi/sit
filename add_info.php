@@ -29,7 +29,7 @@
    
 
 $send="INSERT INTO `usr`(`id`, `ffname`, `arab`, `geographe`, `anglais`, `dat add`) VALUES ('$id','$ffname','$arab','$geographe','$anglais',CURRENT_TIMESTAMP)";
- $query= mysqli_query( $connect,$send) ;
+ $query= mysqli_query( $connect,$send) ;//$connect =متغير تاتتصال بقاعدة البيانات
          if($query){
              echo '<div class="yes"> تمت اضافة البيانات بنجاح </div>';
   } 
