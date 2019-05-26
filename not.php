@@ -44,6 +44,12 @@
         $age=$row['anglais'];
         $ffname=$row['ffname'];
         $sum= ($age+$geographe+$arab)/3 ;
+        if ($sum>=10){
+            $fin="ينتقل" ;
+        }
+ else {
+     $fin="يكرر";
+ }
         echo "
             <br><br> <hr> <br><br>
          <div class='a'>  المملكة المغربية <br> وزارة التربية و التعليم <br>اكاديمية مراكش-اسفي </div>
@@ -87,8 +93,11 @@
 
  </tr>
  </table>
+<br><br>
+<div class='not'> نتيجة : $fin </div>
+    <br><br><hr>
+  
 
-  <br><br> <br><br> <br><br><hr>
        " ;
 
 
@@ -97,7 +106,7 @@
 
   }
 
-    ?>
+  ?>
 <input type="button" class="btn btn-secondary"value="طبع النتيجة" onclick="window.print ( ) ;" />
            </center>
             </div>
